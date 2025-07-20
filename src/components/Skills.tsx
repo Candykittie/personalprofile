@@ -5,6 +5,8 @@ import htmlcssLogo from '../assets/logo/code.png';
 import ReactLogo from '../assets/logo/structure.png';
 import clogo from '../assets/logo/c-sharp.png';
 import sql from '../assets/logo/sql.png';
+import deep from '../assets/logo/deep.png';
+import machine from '../assets/logo/machine.png'
 
 const Skills = () => {
   const skills = [
@@ -36,13 +38,25 @@ const Skills = () => {
       name: 'React-JS',
       level: 75,
       icon: ReactLogo,
-      color: 'from-red-400 to-red-600',
+      color: 'from-red-400 to-green-600',
     },
     {
       name: 'Mysql',
       level: 75,
       icon: sql,
       color: 'from-red-400 to-red-600',
+    },
+    {
+      name: 'Deep learning',
+      level: 60,
+      icon: deep,
+      color: 'from-red-400 to-indigo-600',
+    },
+    {
+      name: 'Machine Learning',
+      level: 60,
+      icon: machine,
+      color: 'from-red-400 to-pink-600',
     },
   ];
 
