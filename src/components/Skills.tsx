@@ -1,61 +1,63 @@
 import React from 'react';
-import angularLogo from '../assets/logo/programing (1).png';
-import pythonLogo from '../assets/logo/file (1).png';
-import htmlcssLogo from '../assets/logo/code.png';
-import ReactLogo from '../assets/logo/structure.png';
-import clogo from '../assets/logo/c-sharp.png';
-import sql from '../assets/logo/sql.png';
-import deep from '../assets/logo/deep.png';
-import machine from '../assets/logo/machine.png'
+import { 
+  Code2, 
+  FileCode, 
+  Globe, 
+  Atom, 
+  Hash, 
+  Database, 
+  Brain, 
+  Cpu 
+} from 'lucide-react';
 
 const Skills = () => {
   const skills = [
     {
       name: 'Angular',
       level: 85,
-      icon: angularLogo,
+      icon: Code2,
       color: 'from-red-400 to-green-600',
     },
     {
       name: 'Python',
       level: 75,
-      icon: pythonLogo,
+      icon: FileCode,
       color: 'from-blue-400 to-red-600',
     },
     {
       name: 'HTML & CSS',
       level: 85,
-      icon: htmlcssLogo,
+      icon: Globe,
       color: 'from-orange-400 to-green-600',
     },
     {
       name: 'C#',
       level: 70,
-      icon: clogo,
+      icon: Hash,
       color: 'from-green-400 to-green-600',
     },
     {
       name: 'React-JS',
       level: 75,
-      icon: ReactLogo,
+      icon: Atom,
       color: 'from-red-400 to-green-600',
     },
     {
       name: 'Mysql',
       level: 75,
-      icon: sql,
+      icon: Database,
       color: 'from-red-400 to-red-600',
     },
     {
       name: 'Deep learning',
       level: 60,
-      icon: deep,
+      icon: Brain,
       color: 'from-red-400 to-indigo-600',
     },
     {
       name: 'Machine Learning',
       level: 60,
-      icon: machine,
+      icon: Cpu,
       color: 'from-red-400 to-pink-600',
     },
   ];
@@ -74,10 +76,8 @@ const Skills = () => {
               <div className="flip-card-inner glass-card">
                 {/* Front - Logo Only */}
                 <div className="flip-card-front flex items-center justify-center p-6">
-                  <img
-                    src={skill.icon}
-                    alt={`${skill.name} icon`}
-                    className="w-16 h-16 object-contain rounded-full"
+                  <skill.icon
+                    className="w-16 h-16 text-enhanced-primary"
                   />
                 </div>
 
