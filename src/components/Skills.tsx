@@ -5,7 +5,6 @@ import htmlcssLogo from '../assets/logo/code.png';
 import ReactLogo from '../assets/logo/structure.png';
 import clogo from '../assets/logo/c-sharp.png';
 import sql from '../assets/logo/sql.png';
-// import myPhoto from '../assets/logo/myphoto.png'; // Optional: your personal image
 
 const Skills = () => {
   const skills = [
@@ -14,7 +13,6 @@ const Skills = () => {
       level: 85,
       icon: angularLogo,
       color: 'from-red-400 to-green-600',
-      containerColor: 'bg-gradient-to-br from-red-100 to-green-100'
     },
     {
       name: 'Python',
@@ -34,24 +32,18 @@ const Skills = () => {
       icon: clogo,
       color: 'from-green-400 to-green-600',
     },
-     {
+    {
       name: 'React-JS',
       level: 75,
       icon: ReactLogo,
       color: 'from-red-400 to-red-600',
     },
-      {
+    {
       name: 'Mysql',
       level: 75,
       icon: sql,
       color: 'from-red-400 to-red-600',
     },
-    // {
-    //   name: 'Sanjeev Kumar',
-    //   level: 95,
-    //   icon: myPhoto,
-    //   color: 'from-pink-400 to-pink-600',
-    // },
   ];
 
   return (
@@ -64,31 +56,30 @@ const Skills = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skills.map((skill, index) => (
-            <div key={index} className="glass-card p-6 text-center skill-card group">
-              <div className="mb-6">
-                <div className="relative mx-auto w-20 h-20 mb-4">
-                  <div
-                    className={`absolute inset-0 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300 bg-gradient-to-r ${skill.color}`}
-                  ></div>
-                  <div className="absolute inset-2 rounded-full bg-white/10 flex items-center justify-center">
-                    <img
-                      src={skill.icon}
-                      alt={`${skill.name} icon`}
-                      className="w-10 h-10 object-cover rounded-full"
-                    />
+            <div key={index} className="flip-card">
+              <div className="flip-card-inner glass-card">
+                {/* Front - Logo Only */}
+                <div className="flip-card-front flex items-center justify-center p-6">
+                  <img
+                    src={skill.icon}
+                    alt={`${skill.name} icon`}
+                    className="w-16 h-16 object-contain rounded-full"
+                  />
+                </div>
+
+                {/* Back - Skill Info */}
+                <div className="flip-card-back p-6 text-center">
+                  <h3 className="text-xl font-bold text-enhanced-secondary mb-4">{skill.name}</h3>
+                  <div className="relative">
+                    <div className="w-full bg-white/5 rounded-full h-3 mb-2">
+                      <div
+                        className={`h-3 rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out`}
+                        style={{ width: `${skill.level}%` }}
+                      ></div>
+                    </div>
+                    <span className="text-sm text-enhanced-body font-bold">{skill.level}%</span>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-enhanced-secondary mb-4">{skill.name}</h3>
-              </div>
-
-              <div className="relative">
-                <div className="w-full bg-white/5 rounded-full h-3 mb-2">
-                  <div
-                    className={`h-3 rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out`}
-                    style={{ width: `${skill.level}%` }}
-                  ></div>
-                </div>
-                <span className="text-sm text-enhanced-body font-bold">{skill.level}%</span>
               </div>
             </div>
           ))}

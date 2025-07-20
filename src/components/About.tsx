@@ -260,7 +260,7 @@ const About = () => {
 
           {/* Right: Info */}
           <div className="glass-card p-8 space-y-6">
-            <h3 className="text-3xl font-bold text-enhanced-secondary">Sanjeev Kumar.M</h3>
+            <h3 className="text-3xl font-bold text-enhanced-secondary">Sanjeev Kumar Mohanasundaram</h3>
             <p className="text-lg text-enhanced-body font-semibold">MCA Graduate</p>
             <div className="flex gap-3">
               <span className="px-3 py-1 rounded-full bg-green-500/20 text-green-300 text-xs font-semibold">Available</span>

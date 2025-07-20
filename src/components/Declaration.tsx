@@ -98,7 +98,7 @@ const Declaration = () => {
 
         <div className="text-center mt-8">
           <p className="text-enhanced-muted text-sm font-medium">
-            © 2024 Sanjeev Kumar.M. All rights reserved.
+            © 2025 Sanjeev Kumar Mohanasundaram All rights reserved.
           </p>
         </div>
       </div>

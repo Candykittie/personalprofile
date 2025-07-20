@@ -242,7 +242,7 @@ const Hero = () => {
 
           <div className="space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold text-enhanced-primary mb-4">
-              Sanjeev Kumar.M
+              Sanjeev Kumar Mohanasundaram
             </h1>
             <h2 className="text-xl md:text-2xl text-enhanced-secondary font-bold">
               Master of Computer Applications
