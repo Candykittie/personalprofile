@@ -4,6 +4,13 @@ import { Award, Calendar } from 'lucide-react';
 const Certifications = () => {
   const certifications = [
      {
+      title: 'Advanced ethical hacking',
+      issuer: 'Guvi',
+      date: '2025',
+      description: 'Ethical Hacking.',
+      color: 'from-purple-400 to-red-600',
+    },
+     {
       title: 'Advanced Cyber Security',
       issuer: 'Guvi',
       date: '2025',
