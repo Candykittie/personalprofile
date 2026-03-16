@@ -302,7 +302,7 @@ const Experience = () => {
     title: 'Programmer',
     company: 'Gojan School of Business and Technology',
     location: 'Chennai',
-    duration: 'February 2025 - January 2026,
+    duration: 'February 2025 - January 2026',
     type: (
       <span className="px-3 py-1  bg-blue text-white text-xs font-semibold shadow-sm">
         Full-time
