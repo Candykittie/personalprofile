@@ -300,7 +300,7 @@ const Experience = () => {
   const experiences = [
        {
     title: 'Secretary',
-    company: 'Saveetha Engineering college ',
+    company: 'Saveetha Engineering College ',
     location: 'Chennai',
     duration: 'Currently pursuing',
     type: (
@@ -309,7 +309,7 @@ const Experience = () => {
       </span>
     ),
     projects: [],
-    skills: ['Web Development', 'Teaching', 'Lab Management'],
+    skills: [Excel,'student Management','Management'],
   },
   {
     title: 'Programmer',
@@ -322,7 +322,7 @@ const Experience = () => {
       </span>
     ),
     projects: [],
-    skills: ['Management', 'Teaching', 'Lab Management'],
+    skills: ['Web Development', 'Teaching', 'Lab Management'],
   },
   {
     title: 'Associate Developer Trainee',
