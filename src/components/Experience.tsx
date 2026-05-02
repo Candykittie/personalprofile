@@ -298,6 +298,19 @@ import { Briefcase, MapPin, Calendar, CheckCircle } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
+       {
+    title: 'Secretary',
+    company: 'Saveetha Engineering college ',
+    location: 'Chennai',
+    duration: 'Currently pursuing',
+    type: (
+      <span className="px-3 py-1  bg-blue text-white text-xs font-semibold shadow-sm">
+        Full-time
+      </span>
+    ),
+    projects: [],
+    skills: ['Web Development', 'Teaching', 'Lab Management'],
+  },
   {
     title: 'Programmer',
     company: 'Gojan School of Business and Technology',
