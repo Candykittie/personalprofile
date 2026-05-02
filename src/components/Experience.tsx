@@ -322,7 +322,7 @@ const Experience = () => {
       </span>
     ),
     projects: [],
-    skills: ['Web Development', 'Teaching', 'Lab Management'],
+    skills: ['Management', 'Teaching', 'Lab Management'],
   },
   {
     title: 'Associate Developer Trainee',
